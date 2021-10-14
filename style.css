@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,h1,h2,h3,h4,h5,h6,p,a,span{
+    font-family: "Franklin Gothic Heavy", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    background: url(img/bg.png);
+    border-top: 20px solid #C0C0C2;
+}
+
+/* Text Alignment */
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+
+/* Floating & Clear */
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* Container Style */
+.containerOwn{
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+
+/* First Row Style */
+.firstRow{
+    margin-top: 20px;
+}
+.leftSide{
+    width: 48%;
+}
+.rightSide{
+    width: 48%;
+}
+
+
+/* p style */
+p {
+	font-size: 15px;
+	font-family: sans-serif;
+	line-height: 1.7rem;
+	color: #2c2d2d;
+}
+/* Underline */
+.underline {
+	width: 80px;
+	height: 4px;
+	background: #6C9CE4;
+	margin-left: 40px;
+}
+
+/* Section Title sTyle */
+.sectionTitle{
+    color: #c0c0c2;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: "Franklin Gothic Heavy", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+/* Left Side Style */
+.mainTitle {
+	margin-bottom: 80px;
+}
+.mainTitle h1 {
+	text-transform: uppercase;
+	font-size: 65px;
+	font-family: serif;
+	font-weight: 200;
+	line-height: 55px;
+}
+.mainTitle h2 {
+	color: #6C9CE4;
+	text-transform: uppercase;
+	font-size: 65px;
+	line-height: 53px;
+	margin: 5px 0;
+	margin-bottom: 8px;
+    font-family: "Franklin Gothic Heavy", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/* About Section */
+.aboutSection .underline {
+	margin-bottom: 25px;
+}
+.aboutSection p {
+	margin-bottom: 20px;
+}
+
+/* Work Section */
+.workSection {
+	margin-top: 30px;
+	margin-bottom: 80px;
+}
+.workSection .underline {
+	margin-bottom: 25px;
+}
+.workSection ul {
+	list-style-image: url(img/list_style_arrow.png);
+}
+.workSection ul li {
+    line-height: 2rem;
+    margin-left: 15px;
+}
+.workSection ul li a{
+    color: #2c2d2d;
+    font-size: 16px;
+    font-family: sans-serif;
+    transition: 300ms;
+}
+.workSection ul li:first-child a{
+    color: #6C9CE4;
+}
+.workSection ul li a:hover{
+    color: #6C9CE4;
+}
+
+/* Contact Section */
+.contactSection p {
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 15px;
+	margin-left: 5px;
+	margin-bottom: 30px;
+}
+.contactSection form{}
+.contactSection form input {
+	display: block;
+	width: 320px;
+	height: 30px;
+	border: 1px solid #80808085;
+	margin-bottom: 8px;
+	padding: 0 5px;
+	font-size: 15px;
+	font-family: Tahoma;
+}
+.contactSection form #message {
+	width: 320px;
+	padding: 5px;
+	border: 1px solid #80808085;
+	height: 200px;
+	font-size: 15px;
+	font-family: Tahoma;
+}
+.contactSection form button {
+	background: url(img/hover_shape.png) no-repeat top center;
+	background-size: cover;
+	padding: 25px 20px;
+	border: none;
+	color: #fff;
+	font-size: 15px;
+	position: relative;
+	top: -22px;
+	left: 7px;
+    transition: 400ms;
+}
+.contactSection form button:hover{
+    cursor: pointer;
+    background: url(img/shape.png) no-repeat top center;
+    padding: 25px 20px;
+    box-sizing: border-box;
+}
+
+
+/* Contact Details Section */
+.cDetailSetion {
+	margin-top: 70px;
+}
+.cDetailSetion p {
+	margin-bottom: 25px;
+}
+.mediaItem{
+    width: 48%;
+    margin-bottom: 20px;
+}
+.mediaItem:nth-child(2){
+    float: right;
+}
+.mediaItem:nth-child(4){
+    float: right;
+}
+.mediaItem:nth-child(3) span{
+    margin-left: -1.5px;
+}
+.mediaItem span{
+    
+	font-family: Tahoma;
+}
+
+.mediaItem span i {
+    background: #6C9CE4;
+    color: #fff;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    left: -7px;
+    transition: 400ms;
+  }
+.mediaItem span:hover i{
+    transform: scale(1.15);
+    box-sizing: border-box;
+}
+.mediaItem p {
+	margin-left: 34px;
+	margin-top: -5px;
+	line-height: 1.6;
+}
+
+
+/* Right Side Style */
+.primaryMenu {
+	height: 70px;
+	margin-bottom: 25px;
+}
+.primaryMenu nav {
+	text-align: right;
+	margin-right: 5px;
+	margin-top: 25px;
+}
+.primaryMenu nav a:first-child{
+    background: url(img/hover_shape.png) no-repeat top center;
+    background-size: auto;
+    padding: 26px 20px;
+}
+.primaryMenu nav a {
+	background: url(img/shape.png) no-repeat top center;
+	background-size: contain;
+	padding: 26px 20px;
+	font-size: 14px;
+	font-family: Tahoma;
+	color: #fff;
+	margin-left: 5px;
+}
+.primaryMenu nav a:hover{
+    background: url(img/hover_shape.png) no-repeat top center;
+    padding: 26px 20px;
+}
+
+.welcome .underline {
+    margin-bottom: 20px;
+  }
+  .welcome p {
+    margin-bottom: 20px;
+  }
+  .skills p {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 25px;
+  }
+  .welcome {
+	height: 1100px;
+}
+
+
+/* Skills Items */
+.skills p{
+    margin-bottom: 70px;
+}
+.skills ul{
+    list-style: none;
+    display: inline-block;
+    width: 70%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    border-top: 1px solid rgb(185, 184, 184);
+    border-left: 1px solid rgb(185, 184, 184);
+    transform: rotate(270deg);
+    margin-left: -25px;
+    
+}
+
+.skills ul li{
+    height: 40px;
+    font-size: 20px;
+    color: #fff;
+    font-family: Tahoma;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.skills ul li:nth-child(1){
+    width: 90%;
+}
+.skills ul li:nth-child(2){
+    width: 65%;
+}
+.skills ul li:nth-child(3){
+    width: 35%;
+}
+.skills ul li:nth-child(4){
+    width: 30%;
+}
+.skills ul li:nth-child(5){
+    width: 76%;
+}
+.skills ul li:nth-child(6){
+    width: 85%;
+    margin-bottom: 0;
+}
+
+
+.technology {
+    margin-top: 80px;
+  }
+  .technology p {
+    font-size: 14px;
+  }
+  .technology img {
+    margin-right: 10px;
+  }
+
+
+/* Footer Section */
+.fLeft{
+    width: 30%;
+}
+.fRight{
+    width: 70%;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+
+.fRight p {
+    line-height: 4px;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  .fRight .underline {
+    margin-bottom: 30px;
+  }
+
+  .fRight a i {
+	color: #fff;
+	background: #46baea;
+	display: inline-block;
+	padding: 10px 10px;
+	border-radius: 50px 50px 20px 20px;
+	font-size: 17px;
+}
+  .footer {
+    margin-top: 50px;
+  }
+  .top {
+    display: block;
+    text-align: right;
+    margin-top: 40px;
+  }
+
+  /* Second Row */
+  .secondRow p a {
+	font-family: sans-serif;
+}
